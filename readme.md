@@ -24,3 +24,16 @@ The Users application from the "GraphQL with React" course on Udemy.com.
     }
   }
 }
+
+{
+  company(id: "2") {
+    id
+    name
+    description
+    users {
+      id
+      firstName
+      age
+    }
+  }
+}
