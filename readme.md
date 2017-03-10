@@ -37,3 +37,26 @@ The Users application from the "GraphQL with React" course on Udemy.com.
     }
   }
 }
+
+{
+  apple: company(id: "1") {
+    id
+    name
+    description
+    users {
+      id
+      firstName
+      age
+    }
+  }
+  google: company(id: "1") {
+    id
+    name
+    description
+    users {
+      id
+      firstName
+      age
+    }
+  }
+}
