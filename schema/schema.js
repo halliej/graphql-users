@@ -53,6 +53,13 @@ const RootQuery = new GraphQLObjectType({
           .then(resp => resp.data);
       }
     },
+    users: {
+      type: new GraphQLList(UserType),
+      resolve() {
+        return axios.get('http://localhost:3000/users')
+          .then(resp => resp.data);
+      }
+    },
     company: {
       type: CompanyType,
       args: { id: { type: GraphQLString } },
