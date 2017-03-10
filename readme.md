@@ -11,3 +11,16 @@ The Users application from the "GraphQL with React" course on Udemy.com.
     age
   }
 }
+
+{
+  user(id: "40") {
+    id
+    firstName
+    age
+    company {
+      id
+      name
+      description
+    }
+  }
+}
